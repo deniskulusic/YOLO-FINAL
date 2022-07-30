@@ -1,0 +1,69 @@
+.background {
+    position: absolute;
+    width: 100%;
+    height: 99.6%;
+}
+body{
+    background-color: rgb(243, 243, 243);
+}
+.menu-full{
+    background-color: transparent;
+    position: absolute !important;
+}
+.han-burger, .han-burger::after, .han-burger::before{
+    background-color: black !important;
+}
+.boatnaslov{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+
+    img{
+        height: 100%;
+        width:100%;
+        object-fit: cover;
+    }
+}
+.error-page {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.error-content {
+    .title404{
+    padding-top: 160px;}
+    padding-bottom: 160px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.title404{
+    font-weight: 300;
+    font-size: 160px;
+    line-height: 100%;
+    text-align: center;
+letter-spacing: 0.03em;
+}
+h5{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+@media only screen and (max-width: 950px) {
+   .title404{
+font-size: 120px;
+   } 
+   h5{
+    font-size: 12px;
+   }
+}
