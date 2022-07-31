@@ -3,6 +3,7 @@ var el2 = document.querySelector(".paralaxexp2");
 var distanceFromTop2 =window.pageYOffset + el2.getBoundingClientRect().top;
 let static2=distanceFromTop2;
 var height = el2.offsetHeight;
+console.log(static2)
 window.addEventListener("resize", function() {
 distanceFromTop2 = window.pageYOffset + el2.getBoundingClientRect().top;
 static2=distanceFromTop2;

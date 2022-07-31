@@ -18,7 +18,12 @@ window.addEventListener("resize", function() {
   });
   
 window.addEventListener("scroll", function() {
+
     var distance = window.scrollY;
+    var g=document.querySelector(".skiny-img");  
+    g.style.top = distance * 0.1 + "px";
+    var r=document.querySelector(".wide-img");  
+    r.style.top = -distance * 0.1 + "px";
    if(distance<window.innerHeight){
     document.querySelector(".paralax-header").style.transform = `translateY(${distance *
       1}px)`;

@@ -41,9 +41,11 @@ if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
   document.getElementsByClassName('none')[0].classList.remove('flex-imp');
   document.getElementsByClassName('flex')[0].classList.remove('none-imp');
 }
+
+
   });
  
-    
+   
       
 
 
