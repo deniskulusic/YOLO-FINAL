@@ -326,7 +326,7 @@ picture img {
 }
 
 .absolute {
-  position: absolute;
+  position: relative;
   margin-bottom: -96px;
   justify-self: right;
 }
@@ -376,6 +376,15 @@ picture img {
   font-size: 24px;
   line-height: 110%;
   align-self: center;
+}
+
+.lngactive {
+  color: #FFFFFF;
+  border-bottom: 1.5px solid white;
+}
+
+.lng {
+  color: #E4E4E4;
 }
 
 .naslov-t {
@@ -500,10 +509,9 @@ picture img {
 }
 
 .inverted {
-  background: rgba(255, 255, 255, 0.85);
   color: #000000;
-  -webkit-backdrop-filter: blur(85px);
-          backdrop-filter: blur(85px);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
 }
 .inverted .han-burger, .inverted .han-burger::after, .inverted .han-burger::before {
   background-color: black;

@@ -11,6 +11,15 @@
           backdrop-filter: blur(0px);
 }
 
+.lngactive {
+  color: #FFFFFF;
+  border-bottom: 1.5px solid white;
+}
+
+.lng {
+  color: #E4E4E4;
+}
+
 .none {
   display: none;
 }
@@ -519,7 +528,7 @@ picture img {
   .contact-us {
     grid-column: span 12;
   }
-  h5, h2, h3, p, a, h4, footer img {
+  h5, h2, h3, p, a, h4, footer img, .lng {
     padding-left: 64px;
     padding-right: 64px;
   }
@@ -546,7 +555,7 @@ picture img {
   }
 }
 @media only screen and (max-width: 450px) {
-  h5, h2, h3, p, a, h4 {
+  h5, h2, h3, p, a, h4, .lng {
     padding-left: 24px;
     padding-right: 24px;
   }

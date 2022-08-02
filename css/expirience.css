@@ -4,6 +4,15 @@
   height: 99.6%;
 }
 
+.lngactive {
+  color: #FFFFFF;
+  border-bottom: 1.5px solid white;
+}
+
+.lng {
+  color: #E4E4E4;
+}
+
 .menu-full {
   background-color: transparent;
   color: white;
@@ -717,7 +726,7 @@ picture img {
   .curved-img {
     grid-column: 2/span 10;
   }
-  .e_text, .left-side, .right-side, .left-side-gradovi, .right-side-img, .left-side-img, .left-img-center, .term, .naslov {
+  .e_text, .left-side, .right-side, .left-side-gradovi, .right-side-img, .left-side-img, .left-img-center, .term, .naslov, .lng {
     grid-column: span 12;
   }
   .container {
@@ -743,7 +752,7 @@ picture img {
   }
 }
 @media only screen and (max-width: 450px) {
-  h5, h2, h3, p, a, h4, .term {
+  h5, h2, h3, p, a, h4, .term, .lng {
     padding-left: 24px;
     padding-right: 24px;
   }

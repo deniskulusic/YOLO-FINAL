@@ -1,0 +1,21 @@
+img, h1 {
+  margin : 0;
+  padding : 0;
+}
+img {
+  width : 500px;
+  position : absolute;
+  top : 0;
+  left : 0;
+  z-index : 1;
+}
+h1 {
+  font-family : 'Open Sans', Arial;
+  font-size : 2em;
+  position : absolute;
+  top : 20px;
+  left : 0;
+  color : white;
+  z-index : 2;
+  padding : 3px 5px 3px 25px; /* attention this causes a margin of error !! */
+}

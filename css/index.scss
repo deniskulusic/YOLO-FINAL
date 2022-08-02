@@ -276,7 +276,7 @@ img{
     display: none; /* for Chrome, Safari, and Opera */
   }
   .absolute{
-    position: absolute;
+    position: relative;
     margin-bottom: -96px;
     justify-self: right;
   }
@@ -323,7 +323,13 @@ align-self:center;
         }
     }
 }
-
+.lngactive{
+    color: #FFFFFF;
+    border-bottom: 1.5px solid white;
+}
+.lng{
+    color:#E4E4E4;
+}
 .naslov-t{
     z-index: 2;
     grid-column: 2/span 10;
@@ -438,9 +444,8 @@ box-shadow: none;
 }
 
 .inverted{
-    background: rgba(255, 255, 255, 0.85);
     color: #000000;
-    backdrop-filter: blur(85px);
+    backdrop-filter: blur(0px);
     .han-burger, .han-burger::after,.han-burger::before {
         background-color: black;
     }

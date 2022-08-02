@@ -32,6 +32,18 @@ if(distance-static<window.innerHeight/5){
           ).style.transform = `translateY(${(distance-static) * 0}px)`;
     }
 }
+if(static+window.innerHeight<distance){
+      document.querySelector(".menu-full").classList.add("flexmenu");
+      document.querySelector(".menu-full").classList.remove("nonemenu"); 
+    }
+    else if(static<distance){
+      document.querySelector(".menu-full").classList.add("nonemenu");
+      document.querySelector(".menu-full").classList.remove("flexmenu");
+    }
+    else{
+    document.querySelector(".menu-full").classList.add("flexmenu");  
+    document.querySelector(".menu-full").classList.remove("nonemenu"); 
+    }
 if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
   document.getElementsByClassName('menu-full')[0].classList.add(className);
   document.getElementsByClassName('none')[0].classList.add('flex-imp');

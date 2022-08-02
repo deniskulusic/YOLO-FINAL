@@ -73,6 +73,14 @@ picture{
     bottom: 48px;
     left: calc(50% - 16px);
 }
+.lngactive{
+    color: #FFFFFF;
+    border-bottom: 1.5px solid white;
+}
+.lng{
+    color:#E4E4E4;
+}
+
 .boatnaslov_content{
     position: absolute;
     top: 41.9vh;
@@ -95,6 +103,7 @@ picture{
         right: 0;
         width: 532px;
         display: flex;
+        will-change: transform; 
 }
 .left-img-active{
     position: fixed;
@@ -249,10 +258,9 @@ color: #707070;
         justify-content: center;
     }
     .choice{
-        border-bottom: solid 1px #707070;
         color:#707070;
         height: 100%;
-
+cursor: pointer;
     }
     .active{
         color:#000000;
