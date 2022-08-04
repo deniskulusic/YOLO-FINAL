@@ -1,5 +1,64 @@
+.error input {
+  border-color: #CB4444 !important;
+  margin-bottom: 0;
+}
+.error p {
+  display: flex !important;
+  margin-bottom: 22px;
+  margin-top: 4px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  /* or 22px */
+  letter-spacing: -0.01em;
+  color: #CB4444;
+}
+
 .desktop_none {
   display: none !important;
+}
+
+.sucess {
+  overflow: scroll;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFFFFF;
+  display: none;
+  position: fixed;
+  z-index: 20;
+}
+.sucess .inquire {
+  align-self: center;
+  margin-bottom: 0;
+}
+.sucess h3 {
+  margin-right: 50px;
+  margin-bottom: 16px;
+}
+.sucess p {
+  margin-bottom: 32px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  /* identical to box height, or 26px */
+  /* Primary Colors / Text Gray */
+  color: #707070;
+}
+
+.sucess-img {
+  height: 100%;
+  width: 41.944%;
+  position: absolute;
+}
+.sucess-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .naslov {
@@ -143,6 +202,12 @@ picture img {
 }
 .inquire h2 {
   margin-bottom: 64px;
+}
+.inquire img {
+  height: 48px;
+  width: 48px;
+  margin-top: 163px;
+  margin-bottom: 16px;
 }
 .inquire h4 {
   font-family: "Work Sans";
@@ -412,6 +477,20 @@ input:focus {
     padding-left: 24px;
     padding-right: 24px;
   }
+  .sucess-img {
+    position: relative;
+    width: 100%;
+    height: 532px;
+  }
+  .sucess {
+    flex-direction: column;
+  }
+  .sucess h5 {
+    margin-top: 64px;
+  }
+  .sucess .transparent-button {
+    margin-bottom: 64px;
+  }
   .left-img-center {
     position: relative;
     left: auto;
@@ -431,6 +510,9 @@ input:focus {
   }
   .inquire {
     margin-bottom: 116px;
+  }
+  .inquire img {
+    margin-top: 64px;
   }
   .mega_title {
     font-size: 60px;

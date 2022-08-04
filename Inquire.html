@@ -17,6 +17,24 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="sucess">
+        <div class="sucess-img">
+            <img src="assets/img/DJI_0116p 1.webp" alt="">
+        </div>
+        <div class="container maxw grid">
+            <div class="inquire">
+                <div>
+                    <h5>LET’S GET IN TOUCH</h5>
+                    <h2>Your Inquiry</h2>
+                </div>
+                <img src="assets/img/inqarow.svg" alt="">
+                <h3>Your message has been 
+                    sent successfully!</h3>
+                <p>we willl get back to you as soon as possible</p>
+                <div class="transparent-button" id="dismiss">DISMISS</div>
+            </div>
+        </div>
+    </div>
     <div class="menu-full" >
         <div class="navbar">
             <div onclick="menu()" class="han-menu-full">
@@ -117,9 +135,11 @@
                     <label for="first">FIRS & LAST NAME</label>
                     <input type="text" id="first" placeholder="First & last name">
                 </div>
-                <div>
+                <!-- Ako u div ispod dodamo error klasu pojavi se error -->
+                <div class="">
                     <label for="email">EMAIL</label>
                     <input type="text" id="email" placeholder="Enter your email">
+                    <p style="display:none">Your email is not valid</p>
                 </div>
                 </div>
                 <label for="dates">Dates</label>
@@ -127,7 +147,7 @@
                 
                 <label for="message">Message</label>
                 <input type="text" id="message"  placeholder="Enter your message">
-                <div class="blue_button">
+                <div class="blue_button" id="sucess">
                     SEND
                 </div>
         </div>

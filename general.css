@@ -204,19 +204,49 @@ p {
   line-height: 18px;
   letter-spacing: 0.24em;
   font-family: Satoshi;
-  color: #FFFFFF;
+  max-width: 1000px;
+}
+
+.transparent-button {
+  border: 1px solid #0047FF;
+  padding: 20px 48px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #0047FF;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.24em;
   font-family: Satoshi;
+  cursor: pointer;
+}
+
+.transparent-button:hover {
+  background: rgba(0, 71, 255, 0.05);
+  border: 1px solid #2F69FF;
+}
+
+.transparent-button:active {
+  background: #0047FF;
+  /* Primary Colors/Blue */
+  border: 1px solid #0047FF;
   color: #FFFFFF;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 0.24em;
-  font-family: Satoshi;
-  max-width: 1000px;
+}
+
+.blue_button:hover {
+  background-color: #2F69FF;
+  box-shadow: 6px 57px 23px rgba(26, 113, 255, 0.04), 3px 32px 20px rgba(26, 113, 255, 0.13), 2px 14px 14px rgba(26, 113, 255, 0.21), 0px 4px 8px rgba(26, 113, 255, 0.25), 0px 0px 0px rgba(26, 113, 255, 0.25);
+}
+
+.blue_button:focus {
+  background-color: #074DFF;
+  box-shadow: 6px 57px 16px rgba(26, 113, 255, 0.01), 4px 36px 15px rgba(26, 113, 255, 0.07), 2px 20px 12px rgba(26, 113, 255, 0.25), 1px 9px 9px rgba(26, 113, 255, 0.43), 0px 2px 5px rgba(26, 113, 255, 0.49), 0px 0px 0px rgba(26, 113, 255, 0.5);
+}
+
+.blue_button:active {
+  background-color: #0941D1;
+  box-shadow: 6px 57px 23px rgba(26, 113, 255, 0.04), 3px 32px 20px rgba(26, 113, 255, 0.13), 2px 14px 14px rgba(26, 113, 255, 0.21), 0px 4px 8px rgba(26, 113, 255, 0.25), 0px 0px 0px rgba(26, 113, 255, 0.25);
 }
 
 .han-menu-full {

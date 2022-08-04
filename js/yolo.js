@@ -1,23 +1,17 @@
 var className = "inverted";
 var scrollTrigger=window.innerHeight-76;
-var el = document.querySelector(".left-img-center");
-var el2 = document.querySelector(".height2");
-var el4=document.querySelector(".paralaxexp2")
 var el3 = document.querySelector(".mini-para");
 var distanceFromTop3 =window.pageYOffset + el3.getBoundingClientRect().top;
 var static=window.innerHeight;
-var height = el.offsetHeight;
-var heightfix=el2.offsetHeight;
 var static3=distanceFromTop3 -window.innerHeight;
-var distanceFromTop2 =window.pageYOffset + el4.getBoundingClientRect().top;
-static2=distanceFromTop2;
+
+
 window.addEventListener("resize", function() {
-height = el.offsetHeight;
-heightfix=el2.offsetHeight;
-scrollTrigger=window.innerHeight-76;
-static=scrollTrigger+76;
+
+static=window.innerHeight;
 distanceFromTop3 =window.pageYOffset + el3.getBoundingClientRect().top;
 static3= distanceFromTop3 -window.innerHeight;
+
   });
   document.querySelector('.white_button').addEventListener("click",function(){
     document.getElementsByClassName('show-more')[0].classList.toggle('show-more-active');
@@ -40,18 +34,7 @@ window.addEventListener("scroll", function() {
     document.querySelector(
       ".paralax"
     ).style.transform = `translateY(${distance * 0.1}px)`;}
-  
-    if((distance-static+height-180)>heightfix){
-      el.classList.remove('left-img-active');
-      el.classList.add('left-img-static');
-    }
-    else if(distance>static+100 ){
-      el.classList.remove('left-img-static');
-      el.classList.add('left-img-active');
-    }
-    else{
-      el.classList.remove('left-img-active');
-    }
+
     
     
 if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {

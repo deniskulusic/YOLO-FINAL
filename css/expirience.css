@@ -546,6 +546,12 @@ picture img {
   .naslov {
     margin-top: 64px;
   }
+  .paralax2 .naslov {
+    text-align: left !important;
+  }
+  .paralax23 {
+    margin-bottom: 128px !important;
+  }
   .right-side-img {
     min-height: auto;
     height: 700px;
@@ -637,10 +643,10 @@ picture img {
     order: 1;
   }
   .dva {
-    margin-top: 64px;
+    margin-bottom: 64px;
   }
   .tri {
-    margin-bottom: 64px;
+    margin-top: 64px;
   }
   .text-box-2 .left-side {
     order: 2;

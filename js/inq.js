@@ -11,3 +11,12 @@ var elems = document.querySelectorAll(".option.active");
                 this.classList.toggle('active');
             })
         }
+
+document.getElementById("sucess").addEventListener("click",function(){
+    document.querySelector(".sucess").style.display="flex";
+    document.body.classList.toggle('stop-sroll');
+});
+document.getElementById("dismiss").addEventListener("click",function(){
+    document.querySelector(".sucess").style.display="none";
+    document.body.classList.toggle('stop-sroll');
+});

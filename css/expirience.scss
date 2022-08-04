@@ -466,7 +466,8 @@ img{
     margin-top: 180px;
 }
 .dva{
-    margin-bottom:180px
+    margin-bottom:180px;
+    
 }
 .tri{
     margin-top: 180px;
@@ -514,6 +515,14 @@ img{
       }
       .naslov {
         margin-top: 64px;
+       
+      }
+      .paralax2{
+        .naslov{ text-align: left !important;}
+       
+      }
+      .paralax23{
+        margin-bottom: 128px !important;
       }
     .right-side-img{
         min-height: auto;
@@ -618,10 +627,11 @@ footer{
     }
 }
 .dva{
-    margin-top: 64px;
+    margin-bottom: 64px;
+
 }
 .tri{
-    margin-bottom: 64px;
+    margin-top: 64px;
 }
 .text-box-2 {
     .left-side{

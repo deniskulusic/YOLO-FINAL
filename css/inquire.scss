@@ -4,10 +4,76 @@ $black:#000000;
 $blue:#0047FF;
 $light-grey:#FAFAFA;
 $blue-overlay:rgba(1, 49, 170, 0.8);
+
+
+
+
+//error
+.error{
+    input{  border-color:  #CB4444 !important;
+    margin-bottom: 0;
+    }
+  
+    p{
+        display: flex !important;
+        margin-bottom: 22px;
+        margin-top: 4px;
+        font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 160%;
+
+/* or 22px */
+letter-spacing: -0.01em;
+
+color: #CB4444;
+    }
+}
+
 .desktop_none{
     display:none !important;
 }
+.sucess{
+    overflow: scroll;
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display:none;
+    position: fixed;
+    z-index: 20;
+    .inquire{
+        align-self: center;
+        margin-bottom: 0;
+    }
+    h3{
+        margin-right: 50px;
+        margin-bottom: 16px;
+    }
+    p{
+        margin-bottom: 32px;
+        font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
 
+/* identical to box height, or 26px */
+
+/* Primary Colors / Text Gray */
+color: #707070;
+    }
+}
+.sucess-img{
+    height: 100%;
+    width: 41.944%;
+    position: absolute;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
 .naslov{
     display:flex;
     height: 224px;
@@ -142,7 +208,12 @@ margin-bottom: 16px;
     h2{
         margin-bottom: 64px;
     }
-
+img{
+    height: 48px;
+    width: 48px;
+    margin-top: 163px;
+    margin-bottom: 16px;
+}
 h4{
     font-family: 'Work Sans';
 font-style: normal;
@@ -177,6 +248,7 @@ cursor: pointer;
         font-family: 'Mulish', sans-serif;
 
 }
+
 .option.active{
     border: 1px solid #0047FF;
     color: #0A0E15;
@@ -407,6 +479,22 @@ margin:0;
         padding-left :24px ;
 padding-right: 24px;
     }
+
+    .sucess-img{
+        position: relative;
+        width: 100%;
+        height: 532px;
+    }
+    .sucess{
+        flex-direction: column;
+
+      h5{
+        margin-top: 64px;
+      }
+      .transparent-button{
+        margin-bottom: 64px;
+      }
+    }
     .left-img-center{
         position: relative;
         left: auto;
@@ -428,6 +516,9 @@ padding-right: 24px;
 }
 .inquire{
     margin-bottom: 116px;
+    img{
+        margin-top: 64px;
+      }
 }
 
 .mega_title{
