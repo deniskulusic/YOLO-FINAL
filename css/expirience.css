@@ -681,6 +681,13 @@ picture img {
   .boat-holder {
     padding-top: 217%;
   }
+  .boat-2 {
+    top: auto;
+    bottom: 48px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   .contact-us-img_content-spread {
     margin-right: 40px;
     margin-top: -60px;

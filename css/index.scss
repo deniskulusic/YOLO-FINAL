@@ -594,6 +594,11 @@ margin-bottom: 72px;
 .wide-img{
     margin-right: 20px;
     }
+    .boat-2{
+        top:auto;
+        bottom:48px;
+        height: fit-content;
+    }
     .HOLDER{
         width: 300px !important;
     }
@@ -709,7 +714,7 @@ margin-bottom: 120px;
     }
 }
 .section-4{
-    margin-bottom: 302px+128px;
+    margin-bottom: 302px+128px+64px;
 }
 .naslov-t{
     margin-top: 128px;

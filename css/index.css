@@ -650,6 +650,13 @@ picture img {
   .wide-img {
     margin-right: 20px;
   }
+  .boat-2 {
+    top: auto;
+    bottom: 48px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   .HOLDER {
     width: 300px !important;
   }
@@ -756,7 +763,7 @@ picture img {
     margin-bottom: 48px;
   }
   .section-4 {
-    margin-bottom: 430px;
+    margin-bottom: 494px;
   }
   .naslov-t {
     margin-top: 128px;
