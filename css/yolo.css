@@ -15,14 +15,77 @@
   background-color: black;
 }
 
+.chose-mobile {
+  display: flex;
+  margin-top: 20px;
+  grid-column: span 12;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  margin-bottom: 128px;
+  justify-content: center;
+  align-self: center;
+}
+
+.chose-mobile-element {
+  height: 6px;
+  background: #0047FF;
+  border-radius: 8px;
+  width: 6px;
+}
+
+.chose-mobile-active {
+  width: 15.43px;
+}
+
 .desktop_none {
   display: none;
 }
 
+.shwm-slider-holder {
+  position: absolute;
+  margin-top: 18vh;
+  height: 508px;
+  left: 136px;
+  width: calc(100% - 136px);
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  display: flex;
+  overflow: scroll;
+}
+.shwm-slider-holder img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.shwm-one {
+  height: 100%;
+  min-width: 768px;
+  background-color: red;
+}
+
+.shwm-two {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  height: 100%;
+  min-width: 368px;
+}
+.shwm-two div {
+  height: calc(50% - 16px);
+  width: 100%;
+  background-color: green;
+}
+
+.swhm-one-hol {
+  padding-top: 100%;
+}
+
 .back {
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 32px;
+  left: 64px;
   cursor: pointer;
 }
 
@@ -30,9 +93,10 @@
   width: 100%;
   height: 0;
   z-index: 11;
-  background-color: white;
+  background-color: #202020;
   transition: 2s ease-in-out;
   bottom: 0;
+  overflow: scroll;
   position: fixed;
 }
 
@@ -368,6 +432,18 @@ p {
   display: flex;
   align-items: center;
 }
+.white_button img {
+  margin-right: 10px;
+}
+
+.white_button:hover {
+  opacity: 0.95;
+}
+
+.white_button:active {
+  background-color: #E4E4E4;
+  opacity: 1;
+}
 
 .cabin-content {
   padding-top: 64px;
@@ -443,6 +519,15 @@ p {
   grid-row-start: 1;
   text-align: right;
   margin-bottom: 140px;
+}
+
+.buton-center {
+  display: none;
+  margin-top: 64px;
+}
+
+.active-box {
+  max-height: 30000px !important;
 }
 
 .med {
@@ -649,6 +734,35 @@ p {
   .mobile_none {
     display: none;
   }
+  .shwm-slider-holder {
+    flex-direction: column;
+    position: relative;
+    left: auto;
+    bottom: 0;
+    height: 82vh;
+    width: 100%;
+    row-gap: 32px;
+  }
+  .shwm-one {
+    min-width: 100%;
+  }
+  .shwm-two {
+    min-width: 100%;
+    height: 200%;
+  }
+  .back {
+    left: 32px;
+  }
+  .big-photo {
+    grid-column: 3/span 8;
+    margin-bottom: 0;
+  }
+  .big-photo-holder {
+    padding-top: 140%;
+  }
+  .small-wrapper {
+    grid-column: 3/span 8;
+  }
   .section3 h2 {
     margin-bottom: 0px;
     margin-top: 128px;
@@ -681,7 +795,7 @@ p {
     grid-column: span 6;
   }
   .boat {
-    margin-bottom: 128px;
+    margin-bottom: 0;
   }
   .section4 {
     margin-top: 128px;
@@ -781,7 +895,14 @@ p {
   .cabin {
     grid-column: span 10;
   }
+  .buton-center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
   .span12 {
+    max-height: 150vh;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     row-gap: 32px;
@@ -877,5 +998,22 @@ p {
   .cabinf {
     margin-bottom: 8px;
     margin-top: 32px;
+  }
+  .big-photo {
+    grid-column: span 12;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .big-photo-holder {
+    padding-top: 142.2%;
+  }
+  .small-wrapper {
+    grid-column: span 12;
+  }
+  .menu-div h3:first-of-type {
+    margin-top: 147px;
+  }
+  .boat {
+    margin-top: 128px;
   }
 }/*# sourceMappingURL=yolo.css.map */
