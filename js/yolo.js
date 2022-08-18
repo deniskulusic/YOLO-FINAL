@@ -13,7 +13,7 @@ distanceFromTop3 =window.pageYOffset + el3.getBoundingClientRect().top;
 static3= distanceFromTop3 -window.innerHeight;
 
   });
-  document.querySelector('.white_button').addEventListener("click",function(){
+  document.querySelector('.shwm').addEventListener("click",function(){
     document.getElementsByClassName('show-more')[0].classList.toggle('show-more-active');
     document.body.classList.toggle('stop-sroll');
   });
@@ -73,3 +73,15 @@ el.classList.remove("active");
         this.classList.toggle('active');
     })
 }
+
+var i=0;
+var downbox=document.querySelector('.span12');
+var downbutton=document.getElementById('down-button');
+  downbutton.addEventListener("click", function(){
+  downbox.classList.toggle('active-box');
+    if(i%2==0)
+    downbutton.innerHTML="SHOW LESS"
+    else{
+    downbutton.innerHTML="SHOW MORE"}
+    i++;
+    });
